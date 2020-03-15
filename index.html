@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/main.js" charset="utf-8" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Inconsolata|Slabo+27px|PT+Sans:400,700|Roboto+Condensed:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ко[рР]ектор текста</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-style">
+            <h1>
+                <div>&laquo;ко</div>
+                <div class="flip">[р</div><span class="up-item">Р]</span>
+                <div>ектор&raquo;</div>
+            </h1>
+            <span class="version">Версия 1.3</span>
+        </header>
+        <main class="main-style">
+            <form class="form-style" action="#" method="post">
+                <div class="settings">
+                    <p class="subtitle">Ко[рР]ектор исправляет ваш текст для правильного отображения в соцсетях и мессенджерах.</p>
+                    <p class="subtitle">Это сервис исправляет по умолчанию:</p>
+                    <p class="subtitle">1. - на &#150; (дефис)</p>
+                    <p class="subtitle">2. – на &#151; (тире)</p>
+                    <p class="subtitle">3. Двойные пробелы на один пробел.</p>
+                    <p class="subtitle">4. Знак рубля (&#8381;), если есть &laquo;руб/руб.&raquo;.</p>
+                    <p class="subtitle">5. Кавычки '...' или "..." на &laquo;&nbsp;...&nbsp;&raquo;,</p>
+                    <p class="subtitle">или можно на &bdquo;&nbsp;...&nbsp;&ldquo;.
+                        <div class="checkbox">
+                            <input type="checkbox" id="check" name="change" value="1">
+                            <label for="check" class="label-style">(отметьте для выбора)</label>
+                        </div>
+                    </p>
+                    <!-- <p class="add" id="addInput">Добавить свои символы для замены</p> -->
+                </div>
+                <div class="insert-data">
+                    <p class="data-title">
+                        Вставьте текст, который нужно скорректировать.
+                    </p>
+                    <div class="result-data-textarea">
+                        <textarea placeholder="Вставьте ваш текст" rows="10" id="insertData"></textarea>
+                    </div>
+                </div>
+                <button class="settings-button" id="butchange" value="0">Корректировать</button>
+                <div class="result-style">
+                    <p class="data-title">
+                        Изменённый текст
+                    </p>
+                    <div class="result-data-textarea">
+                        <textarea rows="10" id="resultData" placeholder="Тут будет исправленный текст"></textarea>
+                    </div>
+                    <button class="settings-button" id="copyText" value="0">Скопировать в буфер</button>
+                </div>
+            </form>
+            <div class="dev-planb">Разработано в&nbsp;
+                <div class="plan-b">
+                    <span class="planb_p">p</span><span class="planb_l">l</span><span class="planb_a">a</span><span class="planb_n">n</span>&nbsp;<span class="planb_b">b</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
