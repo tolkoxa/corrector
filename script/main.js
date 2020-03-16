@@ -17,17 +17,18 @@ document.getElementById('copyText').onclick = function(e) {
 class Change {
     constructor(check) {
         this.check = check;
+        this.lrAquo = {
+            leftAquo: '«',
+            rightAquo: '»'
+        };
     }
 
     mainCheck(check) {
-        if (check == 0) {
-            var leftAquo = '«';
-            var rightAquo = '»';
-        } else {
-            var leftAquo = '„';
-            var rightAquo = '“';
+        if (check == 1) {
+            this.lrAquo.leftAquo = '„';
+            this.lrAquo.rightAquo = '“';
         }
-        this.mainChange(leftAquo, rightAquo);
+        this.mainChange(this.lrAquo.leftAquo, this.lrAquo.rightAquo);
     }
 
     mainChange(leftAquo, rightAquo) {
