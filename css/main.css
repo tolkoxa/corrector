@@ -255,3 +255,7 @@ textarea {
 
 .planb_b {
   font-weight: 700; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .plan-b {
+    opacity: 1; } }
