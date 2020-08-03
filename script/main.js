@@ -33,7 +33,7 @@ class Change {
 
     mainChange(leftAquo, rightAquo) {
         let setChange = [/ '\.| "\./gm,
-            / '\,| "\,/gm,
+            /'\,|"\,/gm,
             / ' | " | '| "/gm,
             /\.'|\."/gm,
             /\?'|\?"/gm,

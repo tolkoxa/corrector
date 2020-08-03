@@ -237,69 +237,30 @@ textarea {
     justify-content: flex-start;
 }
 
-.dev-planb {
+.dev-link {
     margin: 100px 0 0 0;
     padding: 0 0 0 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    border: 1px solid;
 }
 
-.plan-b {
-    margin: 0 0 0 0;
-    padding: 0 2px 0 0;
-    background-color: #ebbd2f;
-    color: white;
-    width: 84px;
-    height: 40px;
-    display: flex;
-    justify-content: flex-end;
-    opacity: 0.5;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+.dev-link {
+    color: black;
+    text-decoration: underline;
     &:hover {
-        opacity: 1;
-        transition: 0.5s;
-        // justify-content: space-evenly;
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffe002;
     }
-}
-
-.planb_p,
-.planb_l,
-.planb_a,
-.planb_n,
-.planb_b {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    display: block;
-}
-
-.planb_p {
-    font-weight: 100;
-}
-
-.planb_l {
-    font-weight: 300;
-}
-
-.planb_a {
-    font-weight: 400;
-}
-
-.planb_n {
-    font-weight: 500;
-}
-
-.planb_b {
-    font-weight: 700;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    .plan-b {
-        opacity: 1;
+    &:active {
+        color: black;
+    }
+    &:visited {
+        color: black;
     }
 }
